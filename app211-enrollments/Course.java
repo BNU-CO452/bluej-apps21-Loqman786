@@ -4,7 +4,7 @@ import java.util.*;
  * This class contains information about an undergraduate course
  * at BNU together with a list of student who are enrolled
  *
- * @author Derek Peacock
+ * @author mohammed Loqman
  * @version 1.0 14/07/2021
  */
 public class Course
