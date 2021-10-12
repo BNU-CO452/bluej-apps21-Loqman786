@@ -9,11 +9,11 @@
  */
 public class Student
 {
-    // A unique 8 digit BNU identifier
+    // 22132753
     private int id;
-    // the student's full name
+    // Mohammed Loqman
     private String name;
-    // The course the student is enrolled on
+    // Software Engineering
     private Course course;
     
     /**

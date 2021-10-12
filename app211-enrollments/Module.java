@@ -8,17 +8,18 @@
 public class Module
 {
     // instance variables - replace the example below with your own
-    private String Code;
+    private String code;
     private String title;
     private int credit;
 
     /**
      * Constructor for objects of class Module
      */
-    public Module(string code, String title) 
-   {this.code = code;
+    public Module(String code, String title) 
+   {
+    this.code = code;
     this.title = title;
-    this.credits = 0;
+    credit = 0;
         
     }
 
@@ -28,20 +29,26 @@ public class Module
      * @param  y  a sample parameter for a method
      * @return credit   the sum of x and y
      */
-    public int sampleMethod(int y)
+    public int getCredit()
     {
         // put your code here
         return credit;
     }
 
-public String getCode () 
+public String getCode()
 {
-    Return title;
+    return code;
 }
-public void setCredit ()
+
+public String getTitle()
 {
-    
-    
+    return title;
+}
+
+
+public void setCredit (int credit)
+{
+    this.credit = credit;
 }
 
 
@@ -51,11 +58,9 @@ public void setCredit ()
      */
     public void print()
     {
-        printHeading();
-        
         System.out.println(" Course Code: " + code + ": " + title);
         System.out.println();
     }
     
-
+    
 } 
