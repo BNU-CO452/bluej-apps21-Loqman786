@@ -1,0 +1,38 @@
+Student mohammed = new Student("mohammed", 22132753);
+Course Software = new Course("softwareengineering", "softwareengineering");
+Module co452 = new Module("co452", "co452");
+ModuleMark co452mark = new ModuleMark(co452);
+mohammed.enrol(Software);
+Software.addModule(co452);
+co452mark.getCredit()
+    returned int 0
+co452mark.setMark(80);
+co452mark.setMark(80);
+mohammed.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22132753, mohammed
+
+ Course softwareengineering: softwareengineering
+
+ co452: 	programming concepts	  15 credits
+ co454: 	software engineering	  15 credits
+ co456: 	business managment	  15 credits
+ co458: 	digi tech	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ co452: 	programming concepts	  15	75A
+
+ co454: 	software engineering	  0	10F
+
+ co456: 	business managment	  0	10F
+
+ co458: 	digi tech	  0	10F
+
+
+ Final Course Grade = F
