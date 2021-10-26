@@ -3,8 +3,8 @@ import java.util.ArrayList;
  * This class stores information about a course
  * that enrolled students may want to complete
  *
- * @author Derek Peacock and Nicholas Day
- * @version 0.1 11/Sep/2020
+ * @author Mohammed Loqman
+ * @version 0.1 26/october/2021
  */
 public class Course
 {
@@ -42,7 +42,15 @@ public class Course
      * must be your four modules.
      */
     public void createModules()
-    {
+    { 
+        Module co452 = new Module("co452", "programming concepts");
+        Module co454 = new Module("co454", "software engineering");
+        Module co456 = new Module("co456", "business managment");
+        Module co458 = new Module("co458", "digi tech");
+        addModule(co452);
+        addModule(co454);
+        addModule(co456);
+        addModule(co458);
 
     }
     
@@ -55,11 +63,24 @@ public class Course
     }
     
     /**
-     * 
+     * This converts your total into grades
      */
     public Grades convertToGrade(int mark)
     {
-        return Grades.NS;
+        if(mark <= 0)
+            return Grades.NS;
+        else if(mark <= 39)
+            return Grades.F;
+        else if(mark <= 49)
+            return Grades.D;
+        else if(mark <= 59)
+            return Grades.C;
+        else if(mark <= 69)
+            return Grades.B;
+        else if(mark <= 100)
+            return Grades.A;
+        else   
+           return Grades.NS;
     }
     
     /**
@@ -68,9 +89,16 @@ public class Course
      */
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {
-        return Grades.NS;
+        int total = 0;
+        int finalMark = 0;
+        for(ModuleMark mark : marks)
+        {
+            total = total + mark.getValue();
+        }
+        finalMark = total / 4;
+        finalGrade = convertToGrade(finalMark);
+        return finalGrade;
     }
-    
     /**
      * Prints out the details of a course and the
      * four modules
@@ -88,7 +116,11 @@ public class Course
      * Print the course's four modules
      */
     public void printModules()
-    {
-        System.out.println();
+    {  
+        for (Module module : modules)
+        { 
+                module.print();
+                module.printCredit();
+        }   
     }
 }

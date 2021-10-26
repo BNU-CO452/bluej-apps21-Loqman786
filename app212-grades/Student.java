@@ -67,7 +67,14 @@ public class Student
      */
     public void awardTestMarks()
     {
-        
+        int value = 75;
+        for (Module module : course.modules)
+        {
+            ModuleMark mark = new ModuleMark (module); 
+            mark.setMark (value);
+            value = value = 10;
+            marks.add(mark);
+        }
     }
     
     /**
@@ -102,9 +109,17 @@ public class Student
         course.print();
     }
     
+    /**
+     * Prints out the value for the module
+     * Uses the converters to get a letter grade
+     */
     private void printModules()
     {
-
+    for(ModuleMark mark : marks)
+    {
+         mark.print();
+         System.out.println(course.convertToGrade(mark.getValue()));
+    } 
     }
     
     public void printTranscript()
