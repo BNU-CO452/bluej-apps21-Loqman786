@@ -9,17 +9,14 @@ import java.util.ArrayList;
 public class Course
 {
     public final static int MAXN_MODULES = 4;
-    
     public ArrayList<Module> modules;
-    
     private String code;
     private String title;
-    
     private Grades finalGrade;
      
     public Course()
     {
-        this("G400", "BSc Computing");
+        this("BT1SFT1", "BSc Software Engineering");
     }
     
     /**
@@ -43,10 +40,10 @@ public class Course
      */
     public void createModules()
     { 
-        Module co452 = new Module("co452", "programming concepts");
-        Module co454 = new Module("co454", "software engineering");
-        Module co456 = new Module("co456", "business managment");
-        Module co458 = new Module("co458", "digi tech");
+        Module co452 = new Module("co452", "Programming Concepts");
+        Module co454 = new Module("co454", "Computer Architecture");
+        Module co456 = new Module("co456", "Web Development" + "\t");
+        Module co458 = new Module("co458", "Digi Tech" + "\t");
         addModule(co452);
         addModule(co454);
         addModule(co456);
@@ -95,10 +92,11 @@ public class Course
         {
             total = total + mark.getValue();
         }
-        finalMark = total / 4;
+        finalMark = total / MAXN_MODULES;
         finalGrade = convertToGrade(finalMark);
         return finalGrade;
     }
+    
     /**
      * Prints out the details of a course and the
      * four modules
