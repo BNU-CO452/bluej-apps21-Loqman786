@@ -9,7 +9,9 @@ import java.util.ArrayList;
 public class Course
 {
     public final static int MAXN_MODULES = 4;
+    public final static int MAXN_STUDENTS = 4;
     public ArrayList<Module> modules;
+    public ArrayList<Student> students;
     private String code;
     private String title;
     private Grades finalGrade;
@@ -17,6 +19,7 @@ public class Course
     public Course()
     {
         this("BT1SFT1", "BSc Software Engineering");
+        
     }
     
     /**
@@ -29,6 +32,7 @@ public class Course
         this.title = title;
         
         modules  = new ArrayList<Module>();
+        students  = new ArrayList<Student>();
         
         createModules();
     }
@@ -51,6 +55,18 @@ public class Course
 
     }
     
+      public void createStudents()
+    { 
+        Student Arbaaz = new Student("Arbaaz", 99999999);
+        Student Ak = new Student("Ak", 01234567);
+        Student Stefan = new Student("Stefan", 87654321);
+        Student Sehrish = new Student("Sehrish", 46287924);
+        addStudent(Arbaaz);
+        addStudent(Ak);
+        addStudent(Stefan);
+        addStudent(Sehrish);    
+
+    }
     public void addModule(Module module)
     {
         if(modules.size() < MAXN_MODULES)
@@ -59,6 +75,13 @@ public class Course
         }
     }
     
+     public void addStudent(Student student)
+    {
+        if(students.size() < MAXN_STUDENTS)
+        {
+            students.add(student);
+        }
+    }
     /**
      * This converts your total into grades
      */
@@ -119,6 +142,14 @@ public class Course
         { 
                 module.print();
                 module.printCredit();
+        }   
+    }
+     
+    public void printStudent()
+    {  
+        for (Student student : students)
+        { 
+                student.print();
         }   
     }
 }

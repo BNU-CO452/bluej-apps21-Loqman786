@@ -17,6 +17,7 @@ public class Student
     private Course course;
     // The marks awarded for the modules on the course
     private ArrayList<ModuleMark> marks;
+    private ArrayList<Student> students;
     
     private Random randomMark;
     
