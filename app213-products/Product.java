@@ -1,16 +1,16 @@
 /**
  * Model some details of a product sold by a company.
  * 
- * @author David J. Barnes and Michael Kölling.
+ * @author Mohammed Loqman.
  * @version 2016.02.29
  */
 public class Product
 {
     // An identifying number for this product.
     private int id;
-    // The name of this product.
+    // BMW M8 Grand Coupe
     private String name;
-    // The quantity of this product in stock.
+    // 1.
     private int quantity;
 
     /**
