@@ -29,15 +29,11 @@ public class StockList
         stock.add(item);
     }
     
-    public void RemoveProduct(Product item, int productID)
-    {
-        for(Product product : stock)
-        {
-            if(product.getID() == productID);
-        }
-        stock.remove(item);
+    public void RemoveProduct(int productID)
+    {        
+        Product product = findProduct(productID);
+        stock.remove(product);
     }
-    
     /**
      * A method to buy a single quantity of the product
      */
@@ -45,7 +41,6 @@ public class StockList
     {
         buyProduct(productID, 1);
     }
-    
     
     /**
      * Buy a quantity of a particular product.
@@ -59,7 +54,6 @@ public class StockList
         product.increaseQuantity(amount); 
     }
 
-    
     /**
      * Find a product to match the product id,
      * if not found return null

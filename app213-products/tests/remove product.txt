@@ -1,0 +1,199 @@
+ ID 105: Brabus E63S AMG stock level: 6
+ ID 106: Lamborghini aventador SVJ stock level: 6
+ ID 107: ABT RS6 stock level: 2
+ ID 108: Lamborghini hurrican performante stock level: 2
+ ID 109: BMW M5 Competition stock level: 4
+ ID 110: Brabus Rocket 900 stock level: 2
+
+CarList.RemoveProduct(101);
+CarList.print();
+
+ Mohammed Stock List
+ ====================
+
+ ID 102: Mercedes AMG GT Black Series stock level: 8
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 2
+ ID 104: ABT RS3 stock level: 6
+ ID 105: Brabus E63S AMG stock level: 6
+ ID 106: Lamborghini aventador SVJ stock level: 6
+ ID 107: ABT RS6 stock level: 2
+ ID 108: Lamborghini hurrican performante stock level: 2
+ ID 109: BMW M5 Competition stock level: 4
+ ID 110: Brabus Rocket 900 stock level: 2
+
+CarDemo.runDemo();
+
+ Mohammed Stock List
+ ====================
+    Exception occurred.
+
+ ID 102: Mercedes AMG GT Black Series stock level: 8
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 2
+ ID 104: ABT RS3 stock level: 6
+ ID 105: Brabus E63S AMG stock level: 6
+ ID 106: Lamborghini aventador SVJ stock level: 6
+ ID 107: ABT RS6 stock level: 2
+ ID 108: Lamborghini hurrican performante stock level: 2
+ ID 109: BMW M5 Competition stock level: 4
+ ID 110: Brabus Rocket 900 stock level: 2
+
+CarList.RemoveProduct(101);
+CarList.print();
+
+ Mohammed Stock List
+ ====================
+
+ ID 102: Mercedes AMG GT Black Series stock level: 8
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 2
+ ID 104: ABT RS3 stock level: 6
+ ID 105: Brabus E63S AMG stock level: 6
+ ID 106: Lamborghini aventador SVJ stock level: 6
+ ID 107: ABT RS6 stock level: 2
+ ID 108: Lamborghini hurrican performante stock level: 2
+ ID 109: BMW M5 Competition stock level: 4
+ ID 110: Brabus Rocket 900 stock level: 2
+
+CarList.RemoveProduct(104);
+CarDemo.runDemo();
+
+ Mohammed Stock List
+ ====================
+
+    Exception occurred.
+ ID 102: Mercedes AMG GT Black Series stock level: 8
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 2
+ ID 105: Brabus E63S AMG stock level: 6
+ ID 106: Lamborghini aventador SVJ stock level: 6
+ ID 107: ABT RS6 stock level: 2
+ ID 108: Lamborghini hurrican performante stock level: 2
+ ID 109: BMW M5 Competition stock level: 4
+ ID 110: Brabus Rocket 900 stock level: 2
+
+CarList.RemoveProduct(101);
+CarList.RemoveProduct(101);
+CarList.print();
+
+ Mohammed Stock List
+ ====================
+
+ ID 102: Mercedes AMG GT Black Series stock level: 8
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 2
+ ID 105: Brabus E63S AMG stock level: 6
+ ID 106: Lamborghini aventador SVJ stock level: 6
+ ID 107: ABT RS6 stock level: 2
+ ID 108: Lamborghini hurrican performante stock level: 2
+ ID 109: BMW M5 Competition stock level: 4
+ ID 110: Brabus Rocket 900 stock level: 2
+
+CarList.print();
+
+ Mohammed Stock List
+ ====================
+
+ ID 102: Mercedes AMG GT Black Series stock level: 8
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 2
+ ID 105: Brabus E63S AMG stock level: 6
+ ID 106: Lamborghini aventador SVJ stock level: 6
+ ID 107: ABT RS6 stock level: 2
+ ID 108: Lamborghini hurrican performante stock level: 2
+ ID 109: BMW M5 Competition stock level: 4
+ ID 110: Brabus Rocket 900 stock level: 2
+
+StockList cardemo = new StockList();
+StockDemo stockDem1 = new StockDemo(cardemo);
+cardemo.print();
+
+ Mohammed Stock List
+ ====================
+
+ ID 101: BMW M8 Grand Coupe stock level: 0
+ ID 102: Mercedes AMG GT Black Series stock level: 0
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 0
+ ID 104: ABT RS3 stock level: 0
+ ID 105: Brabus E63S AMG stock level: 0
+ ID 106: Lamborghini aventador SVJ stock level: 0
+ ID 107: ABT RS6 stock level: 0
+ ID 108: Lamborghini hurrican performante stock level: 0
+ ID 109: BMW M5 Competition stock level: 0
+ ID 110: Brabus Rocket 900 stock level: 0
+
+cardemo.RemoveProduct(104);
+cardemo.print();
+
+ Mohammed Stock List
+ ====================
+
+ ID 101: BMW M8 Grand Coupe stock level: 0
+ ID 102: Mercedes AMG GT Black Series stock level: 0
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 0
+ ID 105: Brabus E63S AMG stock level: 0
+ ID 106: Lamborghini aventador SVJ stock level: 0
+ ID 107: ABT RS6 stock level: 0
+ ID 108: Lamborghini hurrican performante stock level: 0
+ ID 109: BMW M5 Competition stock level: 0
+ ID 110: Brabus Rocket 900 stock level: 0
+
+cardemo.print();
+
+ Mohammed Stock List
+ ====================
+
+ ID 101: BMW M8 Grand Coupe stock level: 0
+ ID 102: Mercedes AMG GT Black Series stock level: 0
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 0
+ ID 105: Brabus E63S AMG stock level: 0
+ ID 106: Lamborghini aventador SVJ stock level: 0
+ ID 107: ABT RS6 stock level: 0
+ ID 108: Lamborghini hurrican performante stock level: 0
+ ID 109: BMW M5 Competition stock level: 0
+ ID 110: Brabus Rocket 900 stock level: 0
+
+StockList stockLis1 = new StockList();
+StockDemo stockDem2 = new StockDemo(stockLis1);
+stockLis1.print();
+
+ Mohammed Stock List
+ ====================
+
+ ID 101: BMW M8 Grand Coupe stock level: 0
+ ID 102: Mercedes AMG GT Black Series stock level: 0
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 0
+ ID 104: ABT RS3 stock level: 0
+ ID 105: Brabus E63S AMG stock level: 0
+ ID 106: Lamborghini aventador SVJ stock level: 0
+ ID 107: ABT RS6 stock level: 0
+ ID 108: Lamborghini hurrican performante stock level: 0
+ ID 109: BMW M5 Competition stock level: 0
+ ID 110: Brabus Rocket 900 stock level: 0
+
+stockLis1.RemoveProduct(104);
+stockLis1.print();
+
+ Mohammed Stock List
+ ====================
+
+ ID 101: BMW M8 Grand Coupe stock level: 0
+ ID 102: Mercedes AMG GT Black Series stock level: 0
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 0
+ ID 105: Brabus E63S AMG stock level: 0
+ ID 106: Lamborghini aventador SVJ stock level: 0
+ ID 107: ABT RS6 stock level: 0
+ ID 108: Lamborghini hurrican performante stock level: 0
+ ID 109: BMW M5 Competition stock level: 0
+ ID 110: Brabus Rocket 900 stock level: 0
+
+stockLis1.print();
+
+ Mohammed Stock List
+ ====================
+
+ ID 101: BMW M8 Grand Coupe stock level: 0
+ ID 102: Mercedes AMG GT Black Series stock level: 0
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 0
+ ID 105: Brabus E63S AMG stock level: 0
+ ID 106: Lamborghini aventador SVJ stock level: 0
+ ID 107: ABT RS6 stock level: 0
+ ID 108: Lamborghini hurrican performante stock level: 0
+ ID 109: BMW M5 Competition stock level: 0
+ ID 110: Brabus Rocket 900 stock level: 0
+
