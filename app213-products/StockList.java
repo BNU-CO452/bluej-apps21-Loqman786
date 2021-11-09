@@ -29,6 +29,15 @@ public class StockList
         stock.add(item);
     }
     
+    public void RemoveProduct(Product item, int productID)
+    {
+        for(Product product : stock)
+        {
+            if(product.getID() == productID);
+        }
+        stock.remove(item);
+    }
+    
     /**
      * A method to buy a single quantity of the product
      */
@@ -56,7 +65,7 @@ public class StockList
      * if not found return null
      */
     public Product findProduct(int productID)
- {
+    {
     for(Product product : stock)
     { 
           if(product.getID() == productID)
@@ -64,10 +73,8 @@ public class StockList
               return product;
             }
     }
-    
     return null;
-    
- }
+    }
     
     
     /**

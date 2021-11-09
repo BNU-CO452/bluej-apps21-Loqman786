@@ -1,4 +1,5 @@
 
+
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
