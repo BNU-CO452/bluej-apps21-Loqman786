@@ -58,6 +58,26 @@ public class StockList
     }
 
     /**
+     * Check levels of stock 
+     * If the stock is less than minimum it will buy in store
+     */
+    public void lowStockList()
+    {
+        printHeading();
+        for(Product product : stock) 
+            {
+            if(product.getQuantity() < 3)
+                product.increaseQuantity(10);
+            }
+            System.out.println();
+        for(Product product : stock)
+            {
+                product.print();
+            }
+    }
+    
+    
+    /**
      * Find a product to match the product id,
      * if not found return null
      */
