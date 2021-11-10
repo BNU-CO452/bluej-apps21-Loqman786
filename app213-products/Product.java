@@ -53,16 +53,25 @@ public class Product
 
     public void setQuantity(int quantity)
     {
+        /**
+         * This will give value to the product
+         */
         this.quantity = quantity;
     }
     
     public void increaseQuantity(int amount)
     {
+        /**
+         * This will increase the product quantity
+         */
         quantity = quantity + amount;
     }
     
     public void decreaseQuantity(int amount)
     {
+        /**
+         * This will decrease the product quantity
+         */
         if(quantity >= amount)
             quantity = quantity - amount;
     }

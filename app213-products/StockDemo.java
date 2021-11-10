@@ -57,6 +57,9 @@ public class StockDemo
     }
     
     private void buyProducts()
+    /**
+     * These are the products that i will be buying
+     */
     {
         stock.buyProduct(101,10);
         stock.buyProduct(102,9);
@@ -71,6 +74,9 @@ public class StockDemo
     }
 
     private void sellProducts()
+    /**
+     * The are the products that will be sold
+     */
     { 
         stock.sellProduct(101,5);
         stock.sellProduct(102,5);

@@ -30,7 +30,10 @@ public class StockList
     }
     
     public void RemoveProduct(int productID)
-    {        
+    {  
+        /**
+         * This helps to remove products depending on its unique ID Number
+         */
         Product product = findProduct(productID);
         stock.remove(product);
     }
@@ -145,6 +148,9 @@ public class StockList
     
     public void printHeading()
     {
+        /**
+         * This is what my stocklist is called
+         */
         System.out.println();
         System.out.println(" Mohammed Stock List");
         System.out.println(" ====================");
