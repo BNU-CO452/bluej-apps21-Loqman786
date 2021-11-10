@@ -33,7 +33,7 @@ public class StockDemo
         stock.add(new Product(107, "ABT RS6"));
         stock.add(new Product(108, "Lamborghini hurrican performante"));
         stock.add(new Product(109, "BMW M5 Competition"));
-        stock.add(new Product(110, "Brabus Rocket 900"));
+        stock.add(new Product(111, "Brabus Rocket 900"));
     }
     
     /**

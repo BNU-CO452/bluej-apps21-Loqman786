@@ -11,6 +11,8 @@ public class StockList
 {
     // A list of the products.
     private ArrayList<Product> stock;
+    
+    private int ammountRequired;
 
     /**
      * Initialise the stock manager.
@@ -99,7 +101,7 @@ public class StockList
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void sellProduct(int productID, int amount) 
+    public String sellProduct(int productID, int amount) 
     {
         Product product = findProduct(productID);
         
@@ -110,15 +112,19 @@ public class StockList
                 product.decreaseQuantity(amount);
                 
                 // printout message
+                return String.valueOf(product.getQuantity());
             }
             else
             {
+                ammountRequired = -1*(product.getQuantity()-amount);
                 // printout message
+                return "Fuck you";
             }
         }
         else
         {
             // printout message
+            return"Fuck you";
         }
     }    
 
