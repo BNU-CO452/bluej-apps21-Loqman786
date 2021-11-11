@@ -118,13 +118,13 @@ public class StockList
             {
                 ammountRequired = -1*(product.getQuantity()-amount);
                 // printout message
-                return "Fuck you";
+                return "";
             }
         }
         else
         {
             // printout message
-            return"Fuck you";
+            return"Product out of stock";
         }
     }    
 
