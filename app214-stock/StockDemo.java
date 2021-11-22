@@ -22,7 +22,7 @@ public class StockDemo
         this.stock = stock;
         
         // Here are the products that will be used 
-        // They all have theire own uniqe ID number
+        // They have theire own unique ID numbers
         
         stock.add(new Product(101, "BMW M8 Grand Coupe"));
         stock.add(new Product(102, "Mercedes AMG GT Black Series"));
