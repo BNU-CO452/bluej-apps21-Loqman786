@@ -4,7 +4,7 @@
  * stock manager so that users can add, edit,
  * print and remove stock products
  *
- * @author Student Name
+ * @author Mohammed Loqman
  * @version 0.1
  */
 public class StockApp
@@ -77,7 +77,7 @@ public class StockApp
     {
         System.out.println("********************************");
         System.out.println("  App21-04: Stock Application ");
-        System.out.println("      by Student Name");
+        System.out.println("      by Mohammed Loqman");
         System.out.println("********************************");
     }
 }
