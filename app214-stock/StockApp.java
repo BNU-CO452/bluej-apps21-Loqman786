@@ -43,20 +43,25 @@ public class StockApp
         }
     }
     
-    private boolean executeChoice(String choice)
+   private boolean executeChoice(String choice)
     {
         if(choice.equals("quit"))
         {
             return true;
         }
-        else if(choice.equals("print"))
+        else if(choice.equals("ADD"))
+        {
+            int id = reader.getInt("106: ");
+            String name = reader.getString("Lamborghini aventador SVJ");
+            Product product = new Product(106,"Lamborghini aventador SVJ");
         {
             //stock.print();
         }
         
         return false;
     }
-   
+    return false;
+    }
     /**
      * Print out a menu of operation choices
      */
