@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class StockList
 {
     // A list of the products.
-    private ArrayList<Product> stock;
+    public ArrayList<Product> stock;
     
     private int ammountRequired;
 
@@ -29,6 +29,11 @@ public class StockList
     public void add(Product item)
     {
         stock.add(item);
+    }
+    
+    public void remove(Product item)
+    {
+        stock.remove(item);
     }
     
     public void RemoveProduct(int productID)

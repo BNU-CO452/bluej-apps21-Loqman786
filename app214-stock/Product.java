@@ -11,7 +11,7 @@ public class Product
     // BMW M8 Grand Coupe
     private String name;
     // 1.
-    private int quantity;
+    public int quantity;
 
     /**
      * Constructor for objects of class Product.

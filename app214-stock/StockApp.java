@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * This app provides a user interface to the
  * stock manager so that users can add, edit,
@@ -10,8 +10,8 @@
 public class StockApp
 {
     private InputReader reader;
-    
-    private StockList stock;
+    public StockList stock;
+    public Product product;
     
     /**
      * Constructor for objects of class StockApp
@@ -44,35 +44,191 @@ public class StockApp
     }
     
    private boolean executeChoice(String choice)
+   /**
+    * T his helps to prent the user with a list of choices to manipulate the stock app.
+    */
     {
-        if(choice.equals("quit"))
+        if(choice.equals("print"))
         {
-            return true;
+            printProducts();
         }
-        else if(choice.equals("ADD"))
+        else if(choice.equals("quit"))
         {
-            int id = reader.getInt("106: ");
-            String name = reader.getString("Lamborghini aventador SVJ");
-            Product product = new Product(106,"Lamborghini aventador SVJ");
-        {
-            //stock.print();
+             quitApp();
         }
-        
+        else if(choice.equals("add"))
+        {
+             addProducts();
+        }
+        else if(choice.equals("remove"))
+        {
+             removeProducts();
+        }
+        else if(choice.equals("buy"))
+        {
+             buyProducts();
+        }
+        else if(choice.equals("sell"))
+        {
+             sellProducts();
+        }
+        else if(choice.equals("search"))
+        {
+             searchProducts();
+        }
+        else if(choice.equals("low stock"))
+        {
+             lowStockProducts();
+        }
+        else if(choice.equals("restock"))
+        {
+             autoRestock();
+        }
         return false;
+     }
+    //METHODS IN TESTING ORDER
+
+    /**
+     * Prints out the product and its stock level to the terminal.
+     */
+    public void printProducts()
+    {
+        System.out.println("The stock:");
+        stock.print();
     }
-    return false;
+
+    /**
+     * Quits the app.
+     */
+    public void quitApp()
+    {
+        System.out.println("The app will now quit.");
+        System.exit(0);
     }
+
+    /**
+     * Adds a product to the product list.
+     */
+    public void addProducts()
+    {
+        int id = reader.getInt("Please enter the ID: ");
+        String name = reader.getString("Please enter the name of the product: ");
+        Product product = new Product(id, name);
+        stock.add(product);
+        System.out.println("Product" + product.getID() + ", " + product.getName() + " has been ADDED.");
+    }
+
+    /**
+     * Removes a product from the product list.
+     */
+    public void removeProducts()
+    {
+        int id = reader.getInt("Please enter the ID: ");
+        String name = reader.getString("Please enter the name of the product: ");
+        stock.remove(product);
+        System.out.println("Product" + product.getID() + ", " + product.getName() + "has been REMOVED.");
+    }
+
+    /**
+     * Adds a user determined number of stock for a chosen product.
+     */
+    public void buyProducts()
+    {
+        int id = reader.getInt("Please enter the ID: ");
+        int amount = reader.getInt("Please enter the quantity of the product you would like to buy: ");
+        product.increaseQuantity(amount);
+        System.out.println("Bought " + amount + " of " + product);
+    }
+
+    /**
+     * Subtracts a user determined number of stock for a chosen product.
+     */
+    public void sellProducts()
+    {
+        int id = reader.getInt("Please enter the ID: ");
+        int amount = reader.getInt("Please enter the quantity of the product you would like to sell: ");
+
+            if(product != null)
+            {
+                if(product.getQuantity() > 0)
+                {
+                    product.decreaseQuantity(amount);
+                    System.out.println("Sold " + amount + " of "
+                            + product.getName());
+                }
+                else
+                {
+                    System.out.println("The product " + product.getName()
+                            + " is out of stock");
+                }
+            }
+            else
+            {
+                System.out.println("Couldn't find product");
+            }
+    }
+
+    /**
+     * Finds and prints products based on an input String name.
+     */
+    public void searchProducts()
+    {
+        String name = reader.getString("Please enter the name of the product: ");
+
+        if (product.getName() == name)
+        {
+            System.out.println(product);
+        }
+        else
+        {
+            System.out.println("Couldn't find product.");
+        }
+    }
+
+    /**
+     * Prints a list of products that are low in stock.
+     */
+    public void lowStockProducts()
+    {
+        this.stock = stock;
+        {
+            if(product.quantity <= 5)
+            {
+                System.out.println(product);
+            }
+        }
+    }
+
+    /**
+     * Restocks products significantly that have fallen below a predetermined level of stock.
+     */
+    public void autoRestock()
+    {
+        this.stock = stock;
+        {
+            if (product.quantity <= 5)
+            {
+                product.increaseQuantity(10);
+            }
+        }
+    }
+    
     /**
      * Print out a menu of operation choices
      */
     private void printMenuChoices()
     {
+        System.out.println();   
+        System.out.println("    Print:      Prints products");
+        System.out.println("    Quit:       Quits application");
+        System.out.println("    Add:        Add products");
+        System.out.println("    Remove:     Remove product");
+        System.out.println("    Buy;        Buy product");
+        System.out.println("    Sell;       Sell product");
+        System.out.println("    Search;     Search product");
+        System.out.println("    Low stock;  Prints a list of items that are low on stock");
+        System.out.println("    restock;    Restocks items that are low on stock");
         System.out.println();
-        System.out.println("    Add:        Add a new product");
-        System.out.println("    Remove:     Remove an old product");
-        System.out.println("    Print:      Print all products");
-        System.out.println("    Quit:       Quit the program");
-        System.out.println();        
     }
     
     /**
