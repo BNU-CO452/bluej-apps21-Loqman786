@@ -125,6 +125,7 @@ public class StockApp
     {
         int id = reader.getInt("Please enter the ID: ");
         String name = reader.getString("Please enter the name of the product: ");
+        Product product = stock.findProduct(id);
         stock.remove(product);
         System.out.println("Product" + product.getID() + ", " + product.getName() + "has been REMOVED.");
     }
@@ -136,7 +137,9 @@ public class StockApp
     {
         int id = reader.getInt("Please enter the ID: ");
         int amount = reader.getInt("Please enter the quantity of the product you would like to buy: ");
-        product.increaseQuantity(amount);
+        Product product = stock.findProduct(id);
+        stock.buyProduct(id,amount);
+        stock.print();
         System.out.println("Bought " + amount + " of " + product);
     }
 
@@ -190,13 +193,13 @@ public class StockApp
      */
     public void lowStockProducts()
     {
-        this.stock = stock;
-        {
-            if(product.quantity <= 5)
+        
+        
+            if(product.quantity <= 3)
             {
                 System.out.println(product);
             }
-        }
+        
     }
 
     /**
@@ -204,13 +207,13 @@ public class StockApp
      */
     public void autoRestock()
     {
-        this.stock = stock;
-        {
-            if (product.quantity <= 5)
+        
+        
+            if (product.quantity <= 3)
             {
                 product.increaseQuantity(10);
             }
-        }
+        
     }
     
     /**

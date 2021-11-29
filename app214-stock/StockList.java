@@ -115,13 +115,15 @@ public class StockList
             if(product.getQuantity() > 0)
             {
                 product.decreaseQuantity(amount);
-                
+                System.out.println("sold " + " of "
+                + product.getName());
                 // printout message
                 return String.valueOf(product.getQuantity());
             }
             else
             {
-                ammountRequired = -1*(product.getQuantity()-amount);
+                System.out.println("The product " + product.getName()
+                + " is out of stock ");
                 // printout message
                 return "";
             }
