@@ -21,7 +21,7 @@ public class StockApp
         reader = new InputReader();
         
         stock = new StockList();
-        StockDemo demo = new StockDemo(stock);
+        //StockDemo demo = new StockDemo(stock);
     }
 
     /**
