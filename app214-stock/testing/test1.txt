@@ -1,0 +1,163 @@
+Program.main({ });
+********************************
+  App21-04: Stock Application 
+      by Mohammed Loqman
+********************************
+
+    Print:      Prints products
+    Quit:       Quits application
+    Add:        Add products
+    Remove:     Remove product
+    Buy;        Buy product
+    Sell;       Sell product
+    Search;     Search product
+    Low stock;  Prints a list of items that are low on stock
+    restock;    Restocks items that are low on stock
+
+Please enter your choice > PRINT
+The stock:
+
+ Mohammed Stock List
+ ====================
+
+ ID 101: BMW M8 Grand Coupe stock level: 0
+ ID 102: Mercedes AMG GT Black Series stock level: 0
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 0
+ ID 104: ABT RS3 stock level: 0
+ ID 105: Brabus E63S AMG stock level: 0
+ ID 106: Lamborghini aventador SVJ stock level: 0
+ ID 107: ABT RS6 stock level: 0
+ ID 108: Lamborghini hurrican performante stock level: 0
+ ID 109: BMW M5 Competition stock level: 0
+ ID 110: Brabus Rocket 900 stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Mohammed Loqman
+********************************
+
+    Print:      Prints products
+    Quit:       Quits application
+    Add:        Add products
+    Remove:     Remove product
+    Buy;        Buy product
+    Sell;       Sell product
+    Search;     Search product
+    Low stock;  Prints a list of items that are low on stock
+    restock;    Restocks items that are low on stock
+
+Please enter your choice > ADD
+Please enter the ID: 
+104
+Please enter the name of the product: ABT RS3
+Product104, ABT RS3 has been ADDED.
+********************************
+  App21-04: Stock Application 
+      by Mohammed Loqman
+********************************
+
+    Print:      Prints products
+    Quit:       Quits application
+    Add:        Add products
+    Remove:     Remove product
+    Buy;        Buy product
+    Sell;       Sell product
+    Search;     Search product
+    Low stock;  Prints a list of items that are low on stock
+    restock;    Restocks items that are low on stock
+
+Please enter your choice > BUY
+Please enter the ID: 
+104
+Please enter the quantity of the product you would like to buy: 
+4
+
+ Mohammed Stock List
+ ====================
+
+ ID 101: BMW M8 Grand Coupe stock level: 0
+ ID 102: Mercedes AMG GT Black Series stock level: 0
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 0
+ ID 104: ABT RS3 stock level: 4
+ ID 105: Brabus E63S AMG stock level: 0
+ ID 106: Lamborghini aventador SVJ stock level: 0
+ ID 107: ABT RS6 stock level: 0
+ ID 108: Lamborghini hurrican performante stock level: 0
+ ID 109: BMW M5 Competition stock level: 0
+ ID 110: Brabus Rocket 900 stock level: 0
+ ID 104: ABT RS3 stock level: 0
+
+Bought 4 of  ID 104: ABT RS3 stock level: 4
+********************************
+  App21-04: Stock Application 
+      by Mohammed Loqman
+********************************
+
+    Print:      Prints products
+    Quit:       Quits application
+    Add:        Add products
+    Remove:     Remove product
+    Buy;        Buy product
+    Sell;       Sell product
+    Search;     Search product
+    Low stock;  Prints a list of items that are low on stock
+    restock;    Restocks items that are low on stock
+
+Please enter your choice > SELL
+Please enter the ID: 
+104
+Please enter the quantity of the product you would like to sell: 
+4
+Couldn't find product
+********************************
+  App21-04: Stock Application 
+      by Mohammed Loqman
+********************************
+
+    Print:      Prints products
+    Quit:       Quits application
+    Add:        Add products
+    Remove:     Remove product
+    Buy;        Buy product
+    Sell;       Sell product
+    Search;     Search product
+    Low stock;  Prints a list of items that are low on stock
+    restock;    Restocks items that are low on stock
+
+Please enter your choice > search
+Please enter the ID: 
+104
+Please enter the name of the product: ABT RS3
+
+ Mohammed Stock List
+ ====================
+
+ ID 101: BMW M8 Grand Coupe stock level: 0
+ ID 102: Mercedes AMG GT Black Series stock level: 0
+ ID 103: ABT Audi R8 V10 Performace Quattro stock level: 0
+ ID 104: ABT RS3 stock level: 4
+ ID 105: Brabus E63S AMG stock level: 0
+ ID 106: Lamborghini aventador SVJ stock level: 0
+ ID 107: ABT RS6 stock level: 0
+ ID 108: Lamborghini hurrican performante stock level: 0
+ ID 109: BMW M5 Competition stock level: 0
+ ID 110: Brabus Rocket 900 stock level: 0
+ ID 104: ABT RS3 stock level: 0
+
+ ID: 104, Product: ABT RS3 Has been found
+********************************
+  App21-04: Stock Application 
+      by Mohammed Loqman
+********************************
+
+    Print:      Prints products
+    Quit:       Quits application
+    Add:        Add products
+    Remove:     Remove product
+    Buy;        Buy product
+    Sell;       Sell product
+    Search;     Search product
+    Low stock;  Prints a list of items that are low on stock
+    restock;    Restocks items that are low on stock
+
+Please enter your choice > 

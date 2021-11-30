@@ -74,7 +74,7 @@ public class StockApp
         }
         else if(choice.equals("search"))
         {
-             searchProducts();
+             searchProduct();
         }
         else if(choice.equals("low stock"))
         {
@@ -174,18 +174,15 @@ public class StockApp
     /**
      * Finds and prints products based on an input String name.
      */
-    public void searchProducts()
-    {
+    private void searchProduct()
+    {  
+        int id = reader.getInt("Please enter the ID: "); 
         String name = reader.getString("Please enter the name of the product: ");
-
-        if (product.getName() == name)
-        {
-            System.out.println(product);
-        }
-        else
-        {
-            System.out.println("Couldn't find product.");
-        }
+        Product product = new Product(id, name);
+        
+        stock.print();
+        System.out.println(" ID: "+ product.getID()
+            + "," + " " + "Product:" + " " + product.getName() + " Has been found");
     }
 
     /**
