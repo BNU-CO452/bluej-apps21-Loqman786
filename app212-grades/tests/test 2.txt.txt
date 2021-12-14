@@ -1,0 +1,31 @@
+Student mo = new Student();
+Course softEng = new Course();
+mo.enrol(softEng);
+mo.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by Mohammed Loqman
+ ------------------------------------
+ Student ID: 22132753, Mohammed
+
+ Course BT1SFT1: BSc Software Engineering
+
+ co452: Programming Concepts	  15 credits
+ co454: Computer Architecture	  15 credits
+ co456: Web Development		  15 credits
+ co458: Digi Tech		  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ co452: Programming Concepts	  0	35	F
+
+ co454: Computer Architecture	  15	98	A
+
+ co456: Web Development		  15	51	C
+
+ co458: Digi Tech		  15	68	B
+
+
+ Final Course Grade = B

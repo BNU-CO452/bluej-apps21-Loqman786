@@ -22,7 +22,7 @@ public class StockDemo
         this.stock = stock;
         
         // Here are the products that will be used 
-        // They all have theire own uniqe ID number
+        // They have theire own unique ID numbers
         
         stock.add(new Product(101, "BMW M8 Grand Coupe"));
         stock.add(new Product(102, "Mercedes AMG GT Black Series"));
@@ -33,7 +33,7 @@ public class StockDemo
         stock.add(new Product(107, "ABT RS6"));
         stock.add(new Product(108, "Lamborghini hurrican performante"));
         stock.add(new Product(109, "BMW M5 Competition"));
-        stock.add(new Product(111, "Brabus Rocket 900"));
+        stock.add(new Product(110, "Brabus Rocket 900"));
     }
     
     /**
@@ -70,7 +70,7 @@ public class StockDemo
         stock.buyProduct(107,2);
         stock.buyProduct(108,1);
         stock.buyProduct(109,8);
-        stock.buyProduct(110,4);
+        stock.buyProduct(110, 4);
     }
 
     private void sellProducts()

@@ -2,7 +2,7 @@
 /**
  * Write a description of class ModuleMark here.
  *
- * @author Derek Peacock and Nicholas Day
+ * @author Mohammed Loqman
  * @version 2021-08-18
  */
 public class ModuleMark

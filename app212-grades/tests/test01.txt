@@ -1,0 +1,54 @@
+Student Mohammed = new Student("Mohammed", 22132753);
+Course Computing = new Course("BT1SFT1", "Software Engineering");
+Mohammed.enrol(Computing);
+Mohammed.printCourse();
+ Student ID: 22132753, Mohammed
+
+ Course BT1SFT1: Software Engineering
+
+Module co452 = new Module("co452", "co452");
+Module co452 = new Module("co452", "programming concepts");
+Computing.createModules();
+Computing.addModule(co452);
+ModuleMark momodule = new ModuleMark(co452);
+momodule.getValue()
+    returned int 0
+momodule.setMark(62);
+momodule.getValue()
+    returned int 62
+Mohammed.awardTestMarks();
+Mohammed.addMark(momodule);
+Mohammed.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22132753, Mohammed
+
+ Course BT1SFT1: Software Engineering
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
+Mohammed.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22132753, Mohammed
+
+ Course BT1SFT1: Software Engineering
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!
